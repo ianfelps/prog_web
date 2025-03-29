@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções em JS</title>
+</head>
+<body>
+    <h1>Adicionando Itens em uma Tabela</h1>
+    <hr>
+
+    <h3>Adicionar Itens</h3>
+    <input type="text" id="textItem" maxlength="25" placeholder="Digite o nome do item">
+    <button id="addItem">Adicionar</button>
+
+    <h3>Tabela de Itens</h3>
+    <table border="1">
+        <tr>
+            <th>Itens</th>
+        </tr>
+    </table>
+
+    <h3>Marcar ou Desmarcar Itens</h3>
+    <label for="selectItems">Selecione um item:</label>
+    <select name="selectItems" id="selectItems"></select>
+    <button id="markItem">Marcar</button>
+    <button id="unmarkItem">Desmarcar</button>
+    <button id="removeItem">Remover</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
