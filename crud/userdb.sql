@@ -7,4 +7,7 @@ create table users(
     email varchar(100) not null
 );
 
+INSERT INTO users (nome, email) VALUES ('ian', 'ian@email.com');
+INSERT INTO users (nome, email) VALUES ('joao', 'joao@email.com');
+
 select * from users

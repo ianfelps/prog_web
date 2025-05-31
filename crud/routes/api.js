@@ -26,9 +26,9 @@ router.post('/', (req, res) => {
 router.put('/:id', (req, res) => {
     const {nome, email} = req.body;
     const {id} = req.params;
-    db.query('UPDATE users SET nome = ?, email = ?, WHERE id = ?', [nome, email, id], (err) => {
+    db.query('UPDATE users SET nome = ?, email = ? WHERE id = ?', [nome, email, id], (err) => {
         if (err) return res.status(500).send(err);
-        res.json({id, num, email});
+        res.json({id, nome, email});
     });
 });
 
@@ -37,7 +37,7 @@ router.delete('/:id', (req, res) => {
     const {id} = req.params;
     db.query('DELETE FROM users WHERE id = ?', [id], (err) => {
         if (err) return res.status(500).send(err);
-        res.status(204);
+        res.sendStatus(204);
     });
 });
 
