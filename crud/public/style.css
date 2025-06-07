@@ -1,3 +1,71 @@
+/* style.css */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffe6f0; /* rosa bem claro */
+    padding: 20px;
+    margin: 0;
+}
+
 h1 {
-    color: pink;
+    color: #cc3366; /* rosa escuro */
+}
+
+form {
+    background-color: #fff0f5; /* lavanda rosada */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(204, 51, 102, 0.2); /* sombra rosa */
+    max-width: 400px;
+    margin-bottom: 30px;
+    border: 1px solid #f8c6d8;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #cc3366;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #f5b6cc;
+    border-radius: 6px;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #ff66a3; /* rosa médio */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #e05592; /* rosa um pouco mais escuro */
+}
+
+#user-list {
+    list-style-type: none;
+    padding: 0;
+    max-width: 400px;
+}
+
+#user-list li {
+    background-color: #ffe6f0;
+    margin-bottom: 10px;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #f3b8cc;
+    box-shadow: 0 0 5px rgba(204, 51, 102, 0.1);
+    color: #660033;
 }
